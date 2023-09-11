@@ -1,0 +1,17 @@
+{
+  "name": "my-electron-app01",
+  "version": "1.0.0",
+  "description": "没有描述",
+  "main": "home.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "flame_liu",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^26.2.0"
+  },
+  "dependencies": {
+    "eslint": "^8.49.0"
+  }
+}

@@ -1,0 +1,49 @@
+Arguments: 
+  E:\node\nodejs\node.exe E:\node\nodejs\node_modules\yarn\bin\yarn.js add ESLint
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\dev\jdk\jdk1.8.0_121\bin;E:\dev\jdk\jdk1.8.0_121\jre\bin;E:\TortoiseGit\bin;E:\node\nvm;E:\node\nodejs;E:\MongoDB\Server\bin;E:\wechat_devtools\微信web开发者工具\dll;E:\Dart_SDK\Dart\dart-sdk\bin;E:\maven\apache-maven-3.3.9\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\VScode\Microsoft VS Code\bin;E:\Vue3\node_modules\.bin;E:\MongoDB\Server\bin;C:\Users\Administrator\AppData\Local\Pub\Cache\bin;E:\git\Git\bin;E:\Dart_SDK\fultter_SDK\flutter3.0.0\bin;E:\maven\apache-maven-3.3.9\bin;
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.13.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.npm.taobao.org/ESLint: Not found
+      at Request.params.callback [as _callback] (E:\node\nvm\v16.13.2\node_modules\yarn\lib\cli.js:66145:18)
+      at Request.self.callback (E:\node\nvm\v16.13.2\node_modules\yarn\lib\cli.js:140890:22)
+      at Request.emit (node:events:390:28)
+      at Request.<anonymous> (E:\node\nvm\v16.13.2\node_modules\yarn\lib\cli.js:141862:10)
+      at Request.emit (node:events:390:28)
+      at IncomingMessage.<anonymous> (E:\node\nvm\v16.13.2\node_modules\yarn\lib\cli.js:141784:12)
+      at Object.onceWrapper (node:events:509:28)
+      at IncomingMessage.emit (node:events:402:35)
+      at endReadableNT (node:internal/streams/readable:1343:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "my-electron-app01",
+    "version": "1.0.0",
+    "description": "没有描述",
+    "main": "home.js",
+    "scripts": {
+      "start":"electron ."
+    },
+    "author": "flame_liu",
+    "license": "MIT",
+    "devDependencies": {
+      "electron": "^26.2.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
