@@ -1,10 +1,23 @@
-const { app, BrowserWindow } = require("electron");
+const { Menu, app, BrowserWindow } = require("electron");
+const path = require("path");
 
 const createWindow = () => {
+  Menu.setApplicationMenu(null);
+
   const win = new BrowserWindow({
+    show: false,
+    icon: "./assets/logo.png",
+    frame: true,
     width: 800,
-    height: 600
+    height: 600,
+    webPreferences: {
+      preload: path.join(__dirname, 'preload.js')
+    }
   })
+  win.once("ready-to-show", () => {
+    win.show();
+  })
+
   win.loadFile("./page/home/home.html")
 }
 app.whenReady().then(() => {
