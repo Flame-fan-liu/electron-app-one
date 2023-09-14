@@ -5,12 +5,15 @@
 .header-menu{
   display: flex;
   background-color:#666;
+  height: 32px;
 }
 .header-menu>div{
-  padding: 4px 6px;
   color: #eee;
   cursor: pointer;
   font-size: 14px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 12px;
 }
 .header-menu>div:hover{
   background: #909090;
